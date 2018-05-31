@@ -62,7 +62,7 @@ if __name__=='__main__':
 
     # Plot relative feature importances 
     plot_feature_importances(dt_regressor.feature_importances_, 
-            'Decision Tree regressor', housing_data.feature_names)
+            'Decision Tree regressor', housing_data.get("feature_names"))
     plot_feature_importances(ab_regressor.feature_importances_, 
-            'AdaBoost regressor', housing_data.feature_names)
+            'AdaBoost regressor', housing_data.get("feature_names"))
     
