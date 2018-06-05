@@ -9,6 +9,6 @@ Created on
 
 import numpy as np
 
-a = np.arange(16).reshape(2,8)
+a = np.arange(16).reshape(2,8) 
 
 print(a)
