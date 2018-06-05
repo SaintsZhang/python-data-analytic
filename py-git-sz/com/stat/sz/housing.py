@@ -59,7 +59,7 @@ if __name__=='__main__':
     print("\n#### AdaBoost performance ####")
     print("Mean squared error =", round(mse, 2))
     print("Explained variance score =", round(evs, 2))
-
+    
     # Plot relative feature importances 
     plot_feature_importances(dt_regressor.feature_importances_, 
             'Decision Tree regressor', housing_data.feature_names)
