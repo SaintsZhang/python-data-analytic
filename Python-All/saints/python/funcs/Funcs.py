@@ -19,12 +19,18 @@ def fib2(n):
     return result
 
 def arithmetic_calc(n1,n2):
-    result = []
-    result.append(abs(n1-n2))
-    result.append(n1+n2)
-    result.append(n1*n2)
-    result.append(n1/n2)
-    result.append(n2/n1)
+    # math expression, eval('8/(3-8/3)')
+    result = {}
+    if n1 >= eval(str(n2)):
+        result['(' + str(n1) + '-' + str(n2) + ')'] = abs(n1-eval(str(n2)))
+    else:
+        result['(' + str(n2) + '-' + str(n1) + ')'] = abs(n1-eval(str(n2)))
+    result['(' + str(n1) + '+' + str(n2)+ ')'] = n1 + eval(str(n2))
+    result['(' + str(n1) + '*' + str(n2)+ ')'] = n1 * eval(str(n2))
+    if eval(str(n2)) != 0:
+        result['(' + str(n1) + '/' + str(n2)+ ')'] = n1/eval(str(n2))
+    if n1 != 0:
+        result['(' + str(n2) + '/' + str(n1)+ ')'] = eval(str(n2))/n1
     return result;
 
 def initlog(*args):

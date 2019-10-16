@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from math import exp, floor, ceil
+#from math import exp, floor, ceil
 
 # this is the first comment
 
@@ -51,3 +51,6 @@ for n in range(2, 10):
             break
     else:
         print(n, 'is a prime number')
+        
+        
+        
