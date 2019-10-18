@@ -14,7 +14,8 @@ floor, ceil
 3 * 'abc' # 'abc' repeated 3 times
 len(s)
 str
- 
+range(start,end,step)
+
 '''
 #String - immutable
 #indexing
@@ -27,13 +28,7 @@ word = 'Python'
 
 squares = [1, 4, 9, 16, 25]
 squares.append(6**2)
-
-# Fibonacci series:the sum of two elements defines the next
-a, b = 0 , 1
-while a < 10:
-    print(a, end=' ')
-    a, b = b, a + b
-print('\n')    
+ 
 # Nine-nine multiplication table: 9x9
 # range(1,10,3)
 i = 1
@@ -44,6 +39,7 @@ while i < 10:
     print('\n')
 
 # break, continue, pass
+# for
 for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
@@ -52,5 +48,16 @@ for n in range(2, 10):
     else:
         print(n, 'is a prime number')
         
+# if...elif...else statements
+x = int(input("Please enter an integer: "))
+if x < 0 :
+    x = 0 
+    print('Negative changed to zero')
+elif x == 0 :
+    print('Zero')
+elif x == 1 :    
+    print('Single')
+else:
+    print('more')
         
         

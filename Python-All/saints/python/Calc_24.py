@@ -1,10 +1,23 @@
+# -*- coding: utf-8 -*-
+
 from saints.python.funcs import Funcs
 
 # math expression, eval('8/(3-8/3)')
+# 2,2,2,9
+# 2,7,8,9
+# 1,2,7,7
+# 4,4,10,10
+# 6,9,9,10
+# 1,5,5,5
+# 2,5,5,10
+# 1,4,5,6
+# 3,3,7,7
+# 3,3,8,8
+
 
 f = Funcs.arithmetic_calc
 
-d = [8, 8, 3, 10]
+d = [2, 5, 5, 10]
 ret = {}
 res_24 = {}
 res_final ={}
