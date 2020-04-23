@@ -17,7 +17,7 @@ from saints.python.funcs import Funcs
 
 f = Funcs.arithmetic_calc
 
-d = [2, 5, 5, 10]
+d = [3, 6, 7, 10]
 ret = {}
 res_24 = {}
 res_final ={}
